@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { NextUIProvider } from '@nextui-org/react';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <NextUIProvider>
+      <main  className="text-foreground bg-background main dark">
+        <App />
+      </main>
+    </NextUIProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

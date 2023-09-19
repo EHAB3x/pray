@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import Navigator from './components/Navigator';
+import PrayTime from './components/PrayTime';
+import PrayTable from './components/PrayTable';
+import RandomAyah from './components/RandomAyah';
+import Seb7a from './components/Seb7a';
+import Quran from './components/Quran';
+import Surah from './components/Surah';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      <Navigator />
+    <Routes>
+      
+      <Route path='/' element={
+        <>
+        <PrayTime />
+        <PrayTable />
+        <RandomAyah />
+        </>
+      }></Route>
+      <Route path='/seb7a' element={<Seb7a />}></Route>
+      <Route path='/quran' element={<Quran />}></Route>
+      <Route path='/quran/:surahId' element={<Surah />}></Route>
+    
+    </Routes>
+    </>
   );
 }
 

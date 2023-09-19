@@ -1,0 +1,11 @@
+.quran{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px , 1fr));
+    gap: 30px;
+    height: fit-content;
+    padding: 40px;
+}
+.quran a span{
+    font-size: 16px;
+    font-weight: bold;
+}

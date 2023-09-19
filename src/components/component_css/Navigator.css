@@ -1,0 +1,6 @@
+.navigator{
+    padding: 20px;
+}
+.navigator .inline-flex{
+    justify-content: center;
+}

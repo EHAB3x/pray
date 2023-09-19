@@ -1,0 +1,30 @@
+.surah{
+    min-height: calc(100vh - (83px + 64px));
+    padding: 20px 60px;
+}
+.surah p{
+    display: flex;
+    flex-wrap: wrap;
+}
+.surah p span{
+    display: flex;
+    align-items: center;
+}
+.surah p span .ayah_number{
+    position: relative;
+}
+.surah p span .ayah_number img{
+    width: 30px;
+    height: 40px;
+}
+.surah p span .ayah_number span{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -50%);
+    -webkit-transform: translate(50% , -50%);
+    -moz-transform: translate(50% , -50%);
+    -ms-transform: translate(50% , -50%);
+    -o-transform: translate(50% , -50%);
+    color: black;
+}

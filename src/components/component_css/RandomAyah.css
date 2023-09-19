@@ -1,0 +1,22 @@
+.random-ayah{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ayah{
+    max-width: 90%;
+}
+.ayah pre{
+    white-space: wrap;
+    line-height: 2;
+    font-weight: bold;
+    letter-spacing: 1 px;
+}
+.random-ayah .details{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
