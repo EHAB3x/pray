@@ -8,7 +8,7 @@ const Quran = () => {
     const [surah , setSurah] = useState([]);
     let x = 1 ;
     useEffect(()=>{
-            axios.get(`http://api.alquran.cloud/v1/quran/quran-uthmani`)
+            axios.get(`https://api.alquran.cloud/v1/quran/quran-uthmani`)
             .then(quran => {
                 setSurah(quran.data.data.surahs);
         })
