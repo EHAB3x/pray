@@ -10,3 +10,6 @@ Technologies
 - axios
 - adhan API
 - Quran API
+
+Link
+https://salatktime.netlify.app
