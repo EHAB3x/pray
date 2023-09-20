@@ -17,11 +17,11 @@ function App() {
     <Routes>
       
       <Route path='/' element={
-        <div style={{height:"calc(100vh - (83px + 64px))"}}>
+        <>
         <PrayTime />
         <PrayTable />
         <RandomAyah />
-        </div>
+        </>
       }></Route>
       <Route path='/seb7a' element={<Seb7a />}></Route>
       <Route path='/quran' element={<Quran />}></Route>
