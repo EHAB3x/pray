@@ -9,7 +9,7 @@ const Surah = () => {
     const [name , setName] = useState("")
 
     useEffect(()=>{
-        axios.get(`http://api.alquran.cloud/v1/surah/${surah.surahId}/editions/quran-uthmani,en.asad,en.pickthall`)
+        axios.get(`https://api.alquran.cloud/v1/surah/${surah.surahId}/editions/quran-uthmani,en.asad,en.pickthall`)
         .then(data => {
             setAyat(data.data.data[0].ayahs);
             setName(data.data.data[0].name);
